@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PulseFeed</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        
+    <nav>
+    <div class="navbar obj-width">
+        <a class="logo" href="index.html">PulseFeed</a>
+
+        <div class="search-container">
+            <input type="text" placeholder="Search news here" id="search-input">
+            <button id="search-button" onclick="getSearchedNews()">Search</button>
+        </div>
+    </div> 
+    </nav>
+    <div class="container">
+        <div class="dropdown">
+            <div class="dropdown-content">
+                <span class="options">FILTERS</span>
+                <select name="countries" id="country" onchange="getFilteredNews()">
+
+                    <option value="" disabled selected>Country</option>
+                    <option value="au">Australia</option>
+                    <option value="in">India</option>
+                    <option value="us">USA</option>
+                    <option value="id">Indonesia</option>
+                </select>
+
+                <select name="categories" id="category" onchange="getFilteredNews()">
+
+                    <option value="" disabled selected>Category</option>
+                    <option value="">None</option>
+                    <option value="business">Business</option>
+                    <option value="entertainment">Entertainment</option>
+                    <option value="sports">Sports</option>
+                    <option value="general">General</option>
+                    <option value="health">Health</option>
+                    <option value="science">Science</option>
+                </select>
+
+                <select name="page-size" id="page-size" onchange="getFilteredNews()">
+                    
+                    <option value="10" selected>PageSize: 10</option>
+                    <option value="20"> PageSize: 20</option>
+                    <!-- <option value="30"> PageSize: 30</option>
+                    <option value="50"> PageSize: 50</option> -->
+                </select>
+               
+            </div>
+            
+        </div>
+        <hr>
+
+        <section id="blog-container" class="obj-width">
+            <!-- <div class="blog-card">
+                <img src= "https://placehold.jp/150x150.png">
+                <h2>This is a title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo eligendi maxime atque vitae eius quidem sed cupiditate libero reiciendis totam?</p>
+            </div>
+            <div class="blog-card">
+                <img src="https://placehold.co/600x400">
+                <h2>This is a title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo eligendi maxime atque vitae eius quidem sed cupiditate libero reiciendis totam?</p>
+            </div>
+            <div class="blog-card">
+                <img src="https://placehold.co/600x400">
+                <h2>This is a title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo eligendi maxime atque vitae eius quidem sed cupiditate libero reiciendis totam?</p>
+            </div>
+            <div class="blog-card">
+                <img src="https://placehold.co/600x400">
+                <h2>This is a title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo eligendi maxime atque vitae eius quidem sed cupiditate libero reiciendis totam?</p>
+            </div>
+            <div class="blog-card">
+                <img src="https://placehold.co/600x400">
+                <h2>This is a title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo eligendi maxime atque vitae eius quidem sed cupiditate libero reiciendis totam?</p>
+            </div> -->
+        </section>
+    </div>
+
+    <footer id="footer">
+        <h2 class="footer-text">PulseFeed &copy; All Rights Reserved.</h2>
+        <h4 class="footer-text"> Made with &hearts; by Ashima</h3>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
